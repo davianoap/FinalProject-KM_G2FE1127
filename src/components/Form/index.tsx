@@ -104,7 +104,7 @@ const Form = ({ songUris }: songUrisInterface) => {
 
   return (
     <>
-      <Center>
+      <Center h="55vh">
         <Box w="sm">
           <form onSubmit={handleSubmit}>
             <FormControl mb="3">

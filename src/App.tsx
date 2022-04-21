@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound";
 import { useAppSelector } from "hooks/hooks";
 import Navbar from "components/Navbar/index";
 import NavbarBefore from "components/NavbarBefore";
+import Footer from "components/Footer";
 
 function App() {
   const token = useAppSelector((state) => state.token.value);
@@ -35,6 +36,7 @@ function App() {
           </Switch>
         </Router>
       </Box>
+      <Footer/>
     </>
   );
 }

@@ -21,14 +21,14 @@ const Login = () => {
 
   return (
     <>
-      <Center h="50vh">
+      <Center h="25vh">
        <Box>
           <Heading>
             Please Login First
           </Heading>
         </Box>
       </Center>
-      <Center h="20vh">
+      <Center h="55vh">
         <Box p="10" bgColor="gray.700" borderRadius="md">
           <Box>
             <Image boxSize="120px" src={logo} alt="Spotify Logo" />
