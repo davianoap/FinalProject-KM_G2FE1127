@@ -11,7 +11,7 @@ const NavbarBefore = () => {
       <Box w="full" px={4} bgColor="whiteAlpha.100">
         <Flex alignItems="center" h={16}>
           <Text fontSize="xl" fontWeight="bold" ml={4}>
-            Welcome to Create Playlistss
+            Welcome to Create Playlists
           </Text>
           <Spacer ml="auto" />
         </Flex>
