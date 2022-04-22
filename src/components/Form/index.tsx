@@ -153,6 +153,29 @@ const Form = ({ songUris }: songUrisInterface) => {
             >
               Create
             </Button>
+            <AlertDialog
+        motionPreset="slideInBottom"
+        onClose={onClose}
+        isOpen={isOpen}
+        leastDestructiveRef={cancelRef}
+        isCentered
+      >
+        <AlertDialogOverlay />
+        <AlertDialogContent>
+          <AlertDialogHeader fontSize="lg" fontWeight="bold">
+            Yay, You Successfully Created A Playlist!!
+          </AlertDialogHeader>
+          <AlertDialogCloseButton />
+          <AlertDialogBody>
+            You've added {songUris.length} songs to your playlist!
+          </AlertDialogBody>
+          <AlertDialogFooter>
+            <Button onClick={onClose} colorScheme="green">
+              Understand
+            </Button>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
           </form>
         </Box>
       </Center>
