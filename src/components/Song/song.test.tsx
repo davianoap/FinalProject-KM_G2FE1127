@@ -15,7 +15,6 @@ const renderSong = (
   />
 );
 
-// Maybe i'm overdoing this ~~
 describe("Song", () => {
   test("Song Image Rendered", () => {
     render(renderSong);

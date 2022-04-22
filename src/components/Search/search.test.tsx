@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import Song from "components/Song";
 
 describe("Search", () => {
-  test("MSW Spotify Search API", () => {
+  test("Spotify Search API", () => {
     render(
       <Song
         uri={""}
