@@ -11,7 +11,7 @@ This project was made approx 6 week
 - View your user profile 😃
 - List Song or tracks and then you can make them selectable 🤗
 - Create Playlist and connected to your spotify 🎶
-- Dark mode 🌙
+- Dark mode 🌙 and Light mode 
 
 ## Made With
 
@@ -21,17 +21,20 @@ This project was made approx 6 week
 - Chakra UI
 - Vercel
 
+## How to Access Online
+
+you can access here https://finalproject-km-g2fe1127.vercel.app/ and contact me to give your name email and i will give you an access 
+
+
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`REACT_APP_BASE_URL`: domain to access the app. add this url to spotify developer account redirect uri too. in https://developer.spotify.com/dashboard/.
+`REACT_APP_REDIRECT_URL`: domain to access the app. add this url to spotify developer account redirect uri too. in https://developer.spotify.com/dashboard/.
 
 `REACT_APP_SPOTIFY_CLIENT_ID`: client id on spotify developer account
 
 `REACT_APP_SPOTIFY_CLIENT_SECRET`: client secret on spotify developer account
-
-``
 
 ## How to run in Local
 
