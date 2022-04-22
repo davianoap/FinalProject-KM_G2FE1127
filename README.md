@@ -49,7 +49,7 @@ Install dependencies
 ```bash
   yarn install or npm install
 ```
-Dont Forget to change make `.env.local` and fill them with `REACT_APP_SPOTIFY_CLIENT_ID` and `REACT_APP_REDIRECT_URL`
+Dont Forget to change and make `.env.local` and fill with `REACT_APP_SPOTIFY_CLIENT_ID` and `REACT_APP_REDIRECT_URL`
 
 ```bash
   Example
