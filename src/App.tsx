@@ -28,6 +28,7 @@ function App() {
               {!token ? <Login /> : <Redirect to="/create-playlist" />}
             </Route>
             <Route path="/create-playlist">
+              <Navbar/>
               {!token ? <Redirect exact to="/" /> : <CreatePlaylist />}
             </Route>
             <Route path="*">
