@@ -6,28 +6,32 @@ import {
   Spacer,
   Text,
   Avatar,
-  IconButton,
-  useDisclosure,
-  Drawer,
-  DrawerBody,
-  DrawerHeader,
-  DrawerOverlay,
-  DrawerContent,
+  Button,
+  ButtonProps,
+  useColorMode,
+  AvatarBadge,
+  Image,
 } from "@chakra-ui/react";
 import { useAppSelector } from "hooks/hooks";
+import logo from "assets/spotify-logo.png";
+import { BsSun, BsMoonStarsFill } from 'react-icons/bs';
 
 const Navbar = () => {
   const userData = useAppSelector((state)=> state.user.data);
+  const { colorMode, toggleColorMode } = useColorMode();
 
   return (
     <>
       <Box w="full" px={4} bgColor="whiteAlpha.100">
         <Flex alignItems="center" h={16}>
-          <Text fontSize="xl" fontWeight="bold" ml={4}>
-            Testing 2
-          </Text>
+          <Box>
+            <Image boxSize="32px" src={logo} alt="Spotify Logo" />
+          </Box>
           <Spacer ml="auto" />
-          <Box bgColor="whiteAlpha.300" borderRadius="full">
+          <Button  onClick={toggleColorMode} mr={3}>
+            {colorMode === "light" ? <BsSun /> : <BsMoonStarsFill />}
+          </Button>
+          <Box bgColor="whiteAlpha.300" borderRadius="xl">
             <Flex alignItems="center" pl={3}>
               <Text mr={2}>{userData.display_name}</Text>
               <Avatar

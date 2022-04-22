@@ -9,6 +9,10 @@ import {
   Input,
   useToast,
   useDisclosure,
+  Flex,
+  Heading,
+  Stack,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import {
   AlertDialog,
@@ -105,21 +109,30 @@ const Form = ({ songUris }: songUrisInterface) => {
   return (
     <>
       <Center h="55vh">
-        <Box w="sm">
+        <Box w="sm" 
+        bg={useColorModeValue('white', 'gray.700')}
+        p={6}
+        my={12}
+        rounded={'xl'}
+        boxShadow={'lg'}
+        >
+        <Heading lineHeight={1.1} fontSize={{ base: '2xl', md: '3xl' }} pb={6}>
+          Create Playlist
+        </Heading>
           <form onSubmit={handleSubmit}>
-            <FormControl mb="3">
+            <FormControl mb="3" isRequired>
               <FormLabel htmlFor="title">Title</FormLabel>
               <Input
                 type="text"
-                placeholder="Title"
+                placeholder="Your Title"
                 id="title"
                 name="title"
                 value={form.title}
                 onChange={handleForm}
               />
-              <FormHelperText>Your playlist title</FormHelperText>
+              <FormHelperText>Make sure more than 10 words!</FormHelperText>
             </FormControl>
-            <FormControl>
+            <FormControl isRequired>
               <FormLabel htmlFor="title">Description</FormLabel>
               <Input
                 type="text"
@@ -129,7 +142,7 @@ const Form = ({ songUris }: songUrisInterface) => {
                 value={form.description}
                 onChange={handleForm}
               />
-              <FormHelperText>Your playlist description</FormHelperText>
+              <FormHelperText>Make sure more than 10 words!</FormHelperText>
             </FormControl>
             <Button
               mt="3"
